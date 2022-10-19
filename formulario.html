@@ -5,12 +5,12 @@
         * method (Get = Padrão)
 -->
 <!-- https://meusite.com.br/?nome=evertonoliveira/ -->
-<!-- <form action="" method="post">
-    <fieldset nome="contato">
+<form action="" method="post" enctype="multipart/form-data">
+    <!-- <fieldset nome="contato">
         <legend>Preencha o Formulário</legend>
-    </fieldset>
+    </fieldset> -->
 
-    <-- Button -->
+    <!-- Button -->
     <!-- <button type="button" nome="" class="" id="">Limpar</button>
 
 </form> -->
@@ -35,9 +35,7 @@
 
     <label for="age">Idade</label>
     <input type="number" id="age"> -->
-
-
-    
+  
     <!--
         <datalist>
         * Lista de valores com sugestões p\ra algum elementoinput.
@@ -55,11 +53,11 @@
     <input type="text" list="prof-list" placeholder="Escolha seu Professor"> -->
 
     <fieldset>
-        <legend>Trabalhando com Input</legend>
+        <legend>Trabalhando com Inputs</legend>
 
         <!-- Input text -->
 
-        <input 
+        <!-- <input 
         type="text"
         placeholder="Preencha seu nome"
         size="60"
@@ -67,9 +65,9 @@
         maxlength="20"
         readonly
         >
-        <br>
+        <br> -->
         <!-- Input Number -->
-        <input 
+        <!-- <input 
         type="number"
         size="50"
         minlength="6"
@@ -77,26 +75,123 @@
         title="Preencha o dado"
         readonly
         >
-        <br>
+        <br> -->
         <!-- Input E-mail -->
-        <input 
+        <!-- <input 
         type="email" 
         size="24"
         title="Preencha o dado"
         required
-        >
+        > -->
 
         <!-- Input Senha -->
-        <input 
+        <!-- <input 
         type="password"
         size="24"
-        minlength="8"
-        maxlength="16"
-        title="Preencha o dado"
+        title="Preencha a senha em Hexadecimal"
+        pattern="[0-9a-fA-F]{4-8}"
         required
-        >
+        > -->
+        <br>
+
+        <!-- Input Hidden -->
+        <!-- <input type="hidden" value="Eu estou escondido"> -->
+
+        <!-- Input Color -->
+        <!-- <input type="color"> -->
+
+        <!-- Input date, week, datetime-local, month, time -->
+        <!-- <input type="time"> -->
+
+        <!-- Input Type = Check (Checkbox)-->
+        <!-- <label for="area">
+            Seu interesse maior é por qual área?
+        </label>
+        <div>
+            <input
+             type="checkbox"
+             nome="interesse"
+             id="frontend"
+             value="Front-End Diego Muniz"
+             checked>
+             <label for="frontend">Front-End Diego Muniz</label>
+
+             <input
+              type="checkbox"
+              nome="interesse"
+              id="backend"
+              value="Back-End David Muniz">
+              <label for="backend">Back-End David Muniz</label>
+
+              <input
+               type="checkbox"
+               nome="interesse"
+               id="designuiux"
+               value="Design Ui/Ux Edivânia Muniz">
+               <label for="designuiux">Design Ui/Ux Edivânia Muniz</label>
+        </div> -->
+
+
+        <!-- Interesse = front-end Diego Muniz, back-end David Muniz ... -->
+
+        <!-- Radio Button -->
+        <!-- <h3>Deseja receber notificação da be.academy</h3>
+        <label for="yes">Sim</label>
+        <input type="radio" id="yes" nome="notification" value="yes">
+
+        <label for="no">Não</label>
+        <input type="radio" id="no" nome="notification" value="no">
+         
+         <br> -->
+
+         <!--
+            SELECT
+            Elemento de formulário capaz de criar uma lista de opções a serem selecionadas. (DropDown)
+         -->
+         <label for="teacher">Professores:</label>
+         <select name="select-teacher" id="teacher" multiple size="4">
+            <option value="">Selecione um Professor</option>
+            <option value="Luan Santos">Luan Santos</option>
+            <option value="Moacir Garcia">Moacir Garcia</option>
+            <option value="Jenifer Vieira">Jenifer Vieira</option>
+            <option value="Regis Eduardo">Regis Eduardo</option>
+         </select>
+         <!-- select-teacher = ['Luan Santos', 'Moacir Garcia', ....]-->
+
+         <!--
+            Input Search
+            * Elemento usado para pesquisar conteúdo
+            * Parecido com o campo "text" pode receber atributos e comportamentos
+         -->
+         <br><br>
+
+         <input
+          type="search"
+          nome=""
+          title=""
+          placeholder="Busque o usúario pelo ID"
+          size="24"
+          pattern="[0-9]{0,3}"
+          title="Busque por id de até 3 digitos"
+          required>
+
+          <br><br>
+
+         <!-- 
+            Manipulando arquivos com o file
+            * Usuário poderá fazer um upload de 1 ou mais arquivos de acordo com a extensão.
+        -->
+        <input
+         type="file"
+         value=""
+         accept="image/*"
+         multiple
+         name=""
+         id="">
+        
         <br>
         <button type="submit">Enviar</button>
     </fieldset>
 </form>
 <!-- Usar o CAN I USE para pesquisar informações de versões de navegadores-->
+<!-- W3schools - para verificar Expressões Regulares -->
